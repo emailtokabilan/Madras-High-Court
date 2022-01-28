@@ -1,0 +1,460 @@
+.root {
+    --white: white;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.mySlides {
+    display: grid;
+    margin-top: 150px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    margin-top: 0;
+    max-width: 2000px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.court {
+    margin-top: 20px;
+    height: 400px;
+    width: 250px;
+    float: right;
+    padding: 20px;
+    background-color: #bbb;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: normal;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+    flex-wrap: wrap;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.judges {
+    margin-top: 20px;
+    height: 400px;
+    width: 270px;
+    float: right;
+    padding: 20px;
+    background-color: #bbb;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+}
+
+.services {
+    margin-top: 20px;
+    height: 450px;
+    width: 270px;
+    float: right;
+    padding: 20px;
+    background-color: #bbb;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+}
+
+.announce {
+    margin-top: 20px;
+    height: 450px;
+    width: 260px;
+    float: right;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ment {
+    height: 350px;
+    width: 210px;
+    border-color: #717171;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.bench {
+    margin-top: 30px;
+    height: 450px;
+    width: 280px;
+    float: left;
+    padding: 20px;
+    background-color: #bbb;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+}
+
+.subord {
+    margin-top: 30px;
+    height: 450px;
+    width: 280px;
+    float: left;
+    padding: 20px;
+    background-color: #bbb;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+}
+
+.content {
+    margin-top: 30px;
+    height: 450px;
+    width: 230px;
+    float: left;
+    background-color: rgba(24, 24, 141, 0.774);
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.473);
+    width: 250px;
+    height: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: turquoise;
+}
+
+.archer {
+    margin-top: -50px;
+    height: 450px;
+    width: 300px;
+    float: left;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.flare {
+    height: 350px;
+    width: 260px;
+    background-color: yellowgreen;
+    border-color: #717171;
+    box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.law {
+    height: 100px;
+    width: 500px;
+    margin-top: 430px;
+    margin-right: 400px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-radius: 90px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all.3s cubic-bezier(.38, 1.15, .7, 1.12);
+    font-weight: none;
+    font-family: cursive;
+}
+
+*::selection {
+    background: var(--white);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    min-height: 1800px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(134, 109, 109, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 10rem;
+}
+
+.logoname {
+    height: 5rem;
+    border-radius: 30px;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    color: rgb(161, 157, 157);
+    margin-left: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .navbar a:hover {
+    color: var(--green);
+}
+
+#menu {
+    font-size: 3rem;
+    color: rgb(61, 184, 61);
+    cursor: pointer;
+    padding: 5rem 1rem;
+    border: 2rem solid rgba(0, 0, 0, .2);
+    border-radius: 5rem;
+    display: none;
+}
+
+.footer {
+    margin-top: 500px;
+    height: 300px;
+    width: auto;
+    background-color: rgb(34, 44, 85);
+    box-shadow: 0 .5rem 1rem rgba(134, 109, 109, 0.1);
+}
+
+.disc {
+    padding: 30px;
+    height: 70px;
+    width: auto;
+    background-color: rgb(223, 217, 217);
+    box-shadow: 0 .5rem 1rem rgba(80, 72, 72, 0.651);
+    text-align: center;
+}
+
+.year {
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+    background-color: rgb(34, 44, 85);
+    text-align: center;
+}
+
+.relate {
+    margin-top: 30px;
+    height: 200px;
+    width: 300px;
+    float: left;
+    background-color: rgb(34, 44, 85);
+}
+
+.madras {
+    margin-top: 30px;
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+    background-color: rgb(34, 44, 85);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+ul {
+    color: white;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.link {
+    margin-top: 30px;
+    height: 200px;
+    width: 300px;
+    float: left;
+    background-color: rgb(34, 44, 85);
+    text-align: center;
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:788px) {
+    #menu {
+        display: block;
+    }
+    header {
+        padding: 2rem 3%;
+    }
+    header.navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #f9f9f9;
+        text-align: center;
+        padding: 2rem 0;
+        border-top: 1rem solid rgba(0, 0, 0, .1);
+    }
+    header.navbar {
+        display: block;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        font-size: 2.1rem;
+    }
+}
+
+@media(max-width:400px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 10
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .court,
+    .services,
+    .judges,
+    .announce {
+        font-size: 11px;
+    }
+}

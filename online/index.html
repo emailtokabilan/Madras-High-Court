@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - Visitor Pass Link For Madras High Court</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: rgb(194, 193, 193);
+            text-align: center;
+        }
+        
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            min-height: 100px;
+        }
+        
+        input[type=text],
+        input[type=file],
+        select,
+        textarea {
+            padding: 12px 20px;
+            display: inline-table;
+            border: 4px solid rgb(93, 161, 161);
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-left: 100px;
+        }
+        
+        label {
+            padding: auto;
+            margin-left: 0px;
+        }
+        
+        input[type=submit] {
+            background-color: brown;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .add {
+            margin-left: 10px;
+            width: 100px;
+            height: 100px;
+            margin-top: 6px;
+        }
+        
+        .align {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(228, 227, 227);
+            height: 1000px;
+            text-decoration: none;
+            border-radius: 10px;
+            width: 800px;
+            margin-left: 200px;
+            margin-right: 300px;
+            box-shadow: 0 .5rem 1rem rgba(80, 72, 72, 0.651);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function validateform() {
+            var dateofvisit = document.myform.dateofvisit.value;
+            var mobilenumber = document.myform.mobilenumber.value;
+            var casetype = document.myform.casetype.value;
+            var caseno = document.myform.caseno.value;
+            var idproofupload = document.myform.idproofupload.value;
+            var photoupload = document.myform.photoupload.value;
+
+
+
+            if (dateofvisit == null, dateofvisit == "") {
+                alert("dateofvisit can't be blank");
+                return false;
+            }
+            if (mobilenumber == null, mobilenumber == "") {
+                alert("mobilenumber can't be blank");
+                return false;
+            }
+            if (casetype == null, casetype == "") {
+                alert("casetype can't be blank");
+                return false;
+            }
+            if (caseno == null, caseno == "") {
+                alert("caseno can't be blank");
+                return false;
+            }
+            if (idproofupload == null, idproofupload == "") {
+                alert("idproofupload can't be upload");
+                return false;
+            }
+            if (photoupload == null, photoupload == "") {
+                alert("photoupload can't be upload");
+                return false;
+            }
+
+
+        }
+    </script>
+</body>
+
+<body>
+    <form name="myform" class="align"><br>
+        <img src="../images/courtlogo.png" height="200px" width="200px" alt="">
+        <h4>HIGH COURT OF JUDICATURE MADRAS<br>
+            <h6>ENTRY PASS</h6>
+        </h4>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Date of Visit:  </label><br>
+                    <input type="text" name="dateofvisit" id="myform" placeholder="Enter Date" value=""><br>
+                </td>
+                <td>
+                    <label for="">Mobile No : </label><br>
+                    <input type="text" name="mobilenumber" id="myform" placeholder="Enter Number" value=""><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="">Purpose of Visit : </label><br>
+                    <select name="" id="">
+                            <option value="">Select Purpose of Visit</option>
+                            <option value="">For Case Hearing</option>
+                            <option value=""></option>
+                        </select>
+                </td>
+                <td>
+                    <br><br>
+                    <label for="">Gender : </label><br>
+                    <form>
+                        <input type="radio" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="Third Gender" name="gender" value="Third Gender">
+                        <label for="other">Third Gender</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="">Case Type : </label><br>
+                    <input type="text" name="casetype" id="myform" placeholder="Case Type"><br>
+
+                </td>
+                <td>
+
+                    <label for="">Case No : </label><br>
+                    <input type="text" name="caseno" class="box" id="myform" placeholder="Case No"><br>
+                </td>
+
+            </tr>
+            <tr>
+                <td><br>
+                    <label for="">Visitor Name :</label><br>
+
+                    <select name="visitorname" id="">
+                        <option value="">Select Visitor Name  </option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+
+                </td>
+                <td><br>
+
+                    <label for="">ID Proof : </label><br>
+
+                    <select name="idproof" id="myform">
+                        <option value="">Select   </option>
+                        <option value="">Pan Card</option>
+                        <option value="">Aadhar Card</option>
+                        <option value="">Driving Licence</option>
+                        <option value="">Voters ID</option>
+                        <option value="">Passport</option>
+                        <option value="">Departmental ID</option>
+                        <option value="">Student ID</option>
+                    </select>
+                </td>
+            </tr>
+            <br><br><br><br><br>
+            <tr>
+
+                <td>
+                    <br><br>
+                    <label for="">ID Proof Upload : </label><br>
+                    <input type="file" class="file" name="idproofupload" placeholder="No file chosen">
+                </td>
+                <td>
+                    <br><br>
+                    <label for="">Photo Upload : </label><br>
+                    <input type="file" class="file" name="photoupload" placeholder="No file chosen">
+                </td>
+            </tr>
+
+        </table>
+
+        <br><br><br><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html
