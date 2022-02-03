@@ -3,13 +3,14 @@
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     background-color: whitesmoke;
+
 }
 
 .mySlides {
@@ -23,7 +24,7 @@ img {
 
 .slideshow-container {
     margin-top: 0;
-    max-width: 2000px;
+    max-width: 1500px;
     position: relative;
     margin: auto;
     box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
@@ -48,11 +49,11 @@ img {
 .court {
     margin-top: 20px;
     height: 400px;
-    width: 250px;
+    width: 300px;
     float: right;
     padding: 20px;
     background-color: #bbb;
-    margin-right: 20px;
+    margin-right: 50px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
@@ -73,7 +74,7 @@ img {
     float: right;
     padding: 20px;
     background-color: #bbb;
-    margin-right: 20px;
+    margin-right: 50px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
@@ -84,11 +85,11 @@ img {
 .services {
     margin-top: 20px;
     height: 450px;
-    width: 270px;
+    width: 300px;
     float: right;
     padding: 20px;
     background-color: #bbb;
-    margin-right: 20px;
+    margin-right: 80px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
@@ -99,7 +100,7 @@ img {
 .announce {
     margin-top: 20px;
     height: 450px;
-    width: 260px;
+    width: 300px;
     float: right;
     padding: 20px;
     background-color: whitesmoke;
@@ -111,7 +112,7 @@ img {
 
 .ment {
     height: 350px;
-    width: 210px;
+    width: 250px;
     border-color: #717171;
     box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
     border-radius: 10px;
@@ -122,7 +123,7 @@ img {
 .bench {
     margin-top: 30px;
     height: 450px;
-    width: 280px;
+    width: 350px;
     float: left;
     padding: 20px;
     background-color: #bbb;
@@ -136,7 +137,7 @@ img {
 .subord {
     margin-top: 30px;
     height: 450px;
-    width: 280px;
+    width: 350px;
     float: left;
     padding: 20px;
     background-color: #bbb;
@@ -150,7 +151,7 @@ img {
 .content {
     margin-top: 30px;
     height: 450px;
-    width: 230px;
+    width: 350px;
     float: left;
     background-color: rgba(24, 24, 141, 0.774);
     margin-left: 20px;
@@ -176,7 +177,7 @@ img {
 .archer {
     margin-top: -50px;
     height: 450px;
-    width: 300px;
+    width: 350px;
     float: left;
     padding: 20px;
     background-color: whitesmoke;
@@ -189,7 +190,7 @@ img {
 
 .flare {
     height: 350px;
-    width: 260px;
+    width: 300px;
     background-color: yellowgreen;
     border-color: #717171;
     box-shadow: 0 .5rem 1rem rgba(66, 61, 61, 0.651);
@@ -323,7 +324,7 @@ header .navbar a:hover {
 .footer {
     margin-top: 500px;
     height: 300px;
-    width: auto;
+    width: 1600px;
     background-color: rgb(34, 44, 85);
     box-shadow: 0 .5rem 1rem rgba(134, 109, 109, 0.1);
 }
@@ -454,7 +455,8 @@ a {
     .court,
     .services,
     .judges,
-    .announce {
+    .announce,
+    .footer {
         font-size: 11px;
     }
 }
