@@ -343,7 +343,7 @@ header .navbar a:hover {
     height: 200px;
     width: 200px;
     float: left;
-    margin-left: 10px;
+    margin-left: 100px;
     background-color: rgb(34, 44, 85);
     text-align: center;
 }
@@ -351,6 +351,7 @@ header .navbar a:hover {
 .relate {
     margin-top: 30px;
     height: 200px;
+    margin-left: 100px;
     width: 300px;
     float: left;
     background-color: rgb(34, 44, 85);
@@ -361,7 +362,8 @@ header .navbar a:hover {
     height: 200px;
     width: 300px;
     float: left;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: -900px;
     background-color: rgb(34, 44, 85);
 }
 
